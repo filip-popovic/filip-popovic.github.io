@@ -1,0 +1,118 @@
+---
+title: "Projects"
+format:
+  html:
+    page-layout: full
+---
+
+```{=html}
+<nav class="fp-nav">
+  <div class="fp-nav-inner">
+    <a href="index.html" class="fp-nav-logo">Filip <span>Popovic</span></a>
+    <ul class="fp-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="fp-theme-btn" data-theme-toggle aria-label="Toggle dark mode">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<section class="fp-section" style="padding-bottom: var(--space-6);">
+  <div class="fp-container">
+    <div class="fp-section-header">
+      <p class="fp-eyebrow">Portfolio</p>
+      <h2>All projects</h2>
+      <p>Each project is a complete analysis — from raw data to written report, with reproducible R code.</p>
+    </div>
+  </div>
+</section>
+
+<section class="fp-section" style="padding-top: var(--space-6);">
+  <div class="fp-container">
+    <div class="fp-projects-grid">
+
+      <div class="fp-project-card">
+        <span class="fp-project-tag">Time Series · Economics</span>
+        <h3>Croatian GDP Analysis</h3>
+        <p>Modelled long-run economic trends in Croatian GDP using polynomial regression and ARFIMA processes. The analysis identifies structural breaks, decomposes seasonal components, and generates multi-step forecasts with confidence intervals — providing insight into Croatia's post-EU-accession growth trajectory.</p>
+        <div class="fp-project-methods">
+          <span class="fp-method-tag">ARFIMA</span>
+          <span class="fp-method-tag">Polynomial Regression</span>
+          <span class="fp-method-tag">Trend Decomposition</span>
+          <span class="fp-method-tag">Forecasting</span>
+          <span class="fp-method-tag">R</span>
+        </div>
+        <a href="projects/gdp-report.pdf" class="fp-project-link" target="_blank">
+          Read full report (PDF)
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="fp-project-card">
+        <span class="fp-project-tag">Time Series · Finance</span>
+        <h3>Gold Return Forecasting</h3>
+        <p>Examined gold price return dynamics using spectral analysis and ARFIMA modelling. Tests for long memory and white noise properties reveal whether past returns contain statistically exploitable patterns — with implications for portfolio risk management and commodity pricing models.</p>
+        <div class="fp-project-methods">
+          <span class="fp-method-tag">Spectral Analysis</span>
+          <span class="fp-method-tag">White Noise Tests</span>
+          <span class="fp-method-tag">ARFIMA</span>
+          <span class="fp-method-tag">Long Memory</span>
+          <span class="fp-method-tag">R</span>
+        </div>
+        <a href="projects/gold-report.pdf" class="fp-project-link" target="_blank">
+          Read full report (PDF)
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="fp-project-card">
+        <span class="fp-project-tag">Data Pipeline · Political Science</span>
+        <h3>Austrian Elections Analysis</h3>
+        <p>Designed and implemented a full data pipeline for Austrian federal election results (2019–2024). Includes automated data validation, error detection, D'Hondt seat allocation, coalition feasibility modelling, and Monte Carlo simulations of electoral uncertainty — all documented in a reproducible R workflow.</p>
+        <div class="fp-project-methods">
+          <span class="fp-method-tag">D'Hondt Algorithm</span>
+          <span class="fp-method-tag">Monte Carlo Simulation</span>
+          <span class="fp-method-tag">Data Validation</span>
+          <span class="fp-method-tag">Pipeline Design</span>
+          <span class="fp-method-tag">R</span>
+        </div>
+        <a href="projects/elections-report.pdf" class="fp-project-link" target="_blank">
+          Read full report (PDF)
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="fp-section fp-section-alt">
+  <div class="fp-container">
+    <div class="fp-contact-box">
+      <h2>Need a custom analysis?</h2>
+      <p>I take on freelance projects in statistical analysis, data cleaning, reporting and visualisation.</p>
+      <div class="fp-contact-links">
+        <a href="contact.html" class="btn btn-primary">Get in touch</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="fp-footer">
+  <p>© 2026 Filip Popovic · Vienna, Austria</p>
+</footer>
+
+<script>
+(function(){
+  const t = document.querySelector('[data-theme-toggle]');
+  const r = document.documentElement;
+  let d = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+  r.setAttribute('data-theme', d);
+  if(t) t.addEventListener('click', () => { d = d === 'dark' ? 'light' : 'dark'; r.setAttribute('data-theme', d); });
+})();
+</script>
+```

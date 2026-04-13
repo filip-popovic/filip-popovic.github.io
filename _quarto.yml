@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Filip Popovic"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Projects
+      - href: about.qmd
+        text: About
+      - href: contact.qmd
+        text: Contact
+    right:
+      - icon: github
+        href: https://github.com/filip-popovic
+        aria-label: GitHub
+
+format:
+  html:
+    theme: none
+    css: assets/style.css
+    toc: false

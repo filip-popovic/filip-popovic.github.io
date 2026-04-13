@@ -1,0 +1,80 @@
+---
+title: "About"
+format:
+  html:
+    page-layout: full
+---
+
+```{=html}
+<nav class="fp-nav">
+  <div class="fp-nav-inner">
+    <a href="index.html" class="fp-nav-logo">Filip <span>Popovic</span></a>
+    <ul class="fp-nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="fp-theme-btn" data-theme-toggle aria-label="Toggle dark mode">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </div>
+</nav>
+
+<section class="fp-section">
+  <div class="fp-container">
+    <div class="fp-about-grid">
+      <div class="fp-about-text">
+        <p class="fp-eyebrow" style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-primary);margin-bottom:var(--space-3);">About me</p>
+        <h2>Statistics student.<br><em style="font-style:italic;color:var(--color-primary);">Data analyst.</em></h2>
+        <p>I'm Filip Popovic, a Statistics & Data Science student at the University of Vienna in my 6th semester. My work sits at the intersection of rigorous statistical methodology and practical data analysis — I care about doing things properly, not just getting a result.</p>
+        <p>I specialise in time series analysis, statistical modelling, and reproducible data workflows using R. I've worked extensively with electoral data, economic indicators, and financial time series — always with a focus on clear, honest reporting of results.</p>
+        <p>Outside of statistics, I'm a passionate goalkeeper and sports analytics enthusiast. I believe the same attention to detail that makes a good save also makes a good analysis.</p>
+        <div style="margin-top:var(--space-8);">
+          <a href="contact.html" class="btn btn-primary">Work with me</a>
+        </div>
+      </div>
+      <div>
+        <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:var(--space-4);">Tools & Technologies</p>
+        <div class="fp-tools-list">
+          <div class="fp-tool-item"><span class="fp-tool-dot"></span>R & RStudio</div>
+          <div class="fp-tool-item"><span class="fp-tool-dot"></span>Python</div>
+          <div class="fp-tool-item"><span class="fp-tool-dot"></span>SQL</div>
+          <div class="fp-tool-item"><span class="fp-tool-dot"></span>RMarkdown</div>
+          <div class="fp-tool-item"><span class="fp-tool-dot"></span>ggplot2</div>
+          <div class="fp-tool-item"><span class="fp-tool-dot"></span>tidyverse</div>
+          <div class="fp-tool-item"><span class="fp-tool-dot"></span>Linux</div>
+          <div class="fp-tool-item"><span class="fp-tool-dot"></span>Git & GitHub</div>
+        </div>
+        <div style="margin-top:var(--space-8);">
+          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:var(--space-4);">Areas of expertise</p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);">
+            <span class="fp-skill-chip">Time Series Analysis</span>
+            <span class="fp-skill-chip">Statistical Modelling</span>
+            <span class="fp-skill-chip">Data Visualisation</span>
+            <span class="fp-skill-chip">Electoral Data</span>
+            <span class="fp-skill-chip">Forecasting</span>
+            <span class="fp-skill-chip">Monte Carlo Methods</span>
+            <span class="fp-skill-chip">Regression Analysis</span>
+            <span class="fp-skill-chip">Data Cleaning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="fp-footer">
+  <p>© 2026 Filip Popovic · Vienna, Austria</p>
+</footer>
+
+<script>
+(function(){
+  const t = document.querySelector('[data-theme-toggle]');
+  const r = document.documentElement;
+  let d = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+  r.setAttribute('data-theme', d);
+  if(t) t.addEventListener('click', () => { d = d === 'dark' ? 'light' : 'dark'; r.setAttribute('data-theme', d); });
+})();
+</script>
+```
