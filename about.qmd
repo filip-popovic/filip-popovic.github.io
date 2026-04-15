@@ -27,7 +27,7 @@ format:
     <p class="fp-eyebrow">About me</p>
     <h1 style="font-size:var(--text-2xl); margin-bottom: var(--space-6);">Statistics student.<br><em style="color:var(--color-primary);">Data analyst.</em></h1>
     <p style="max-width:60ch; font-size:var(--text-lg); color:var(--color-text-muted); line-height:1.7;">
-      I'm Filip Popovic — a Statistics & Data Science student at the University of Vienna with a focus on time series analysis, statistical modelling, and reproducible data workflows.
+      I'm Filip Popovic -  a Statistics & Data Science student at the University of Vienna. I help people and businesses make better decisions by turning messy data into clear, actionable answers.
     </p>
   </div>
 </section>
@@ -38,9 +38,9 @@ format:
     <div class="fp-about-grid">
       <div class="fp-about-text">
         <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-6);">Background</h2>
-        <p>My work sits at the intersection of rigorous statistical methodology and practical data analysis. I care about doing things properly — not just getting a result. That means clean code, reproducible workflows, and honest reporting of uncertainty.</p>
-        <p>I specialise in time series analysis, regression modelling, and data pipelines using R. I've worked with electoral data, economic indicators, and financial return series — always asking whether the pattern in the data is real or just noise.</p>
-        <p>Outside of statistics, I'm a goalkeeper and sports analytics enthusiast. The same attention to detail that makes a good save also makes a good analysis.</p>
+        <p>I've always been curious about what numbers are really hiding and what you can do with them once you unpack them. Especially when the answer makes someone´s life even a little bit easier.</p>
+        <p>For me the best analysis is one that looks so simple and clean, you would think anyone could have done it. Some only see the results. Others will see the work.<p>
+        <p>Outside of work, you will find me on a football pitch, at the gym or socialising. Staying curious, whether it is about data or anything else, is what life is about.<p>
         <div style="margin-top:var(--space-8); display:flex; gap:var(--space-3); flex-wrap:wrap;">
           <a href="contact.html" class="btn btn-primary">Work with me</a>
           <a href="projects.html" class="btn btn-outline">See my projects</a>
@@ -54,11 +54,8 @@ format:
           <div class="fp-tools-list">
             <div class="fp-tool-item"><span class="fp-tool-dot"></span>R & RStudio</div>
             <div class="fp-tool-item"><span class="fp-tool-dot"></span>Python</div>
-            <div class="fp-tool-item"><span class="fp-tool-dot"></span>SQL & MySQL</div>
-            <div class="fp-tool-item"><span class="fp-tool-dot"></span>RMarkdown & Quarto</div>
-            <div class="fp-tool-item"><span class="fp-tool-dot"></span>ggplot2 & tidyverse</div>
-            <div class="fp-tool-item"><span class="fp-tool-dot"></span>Git & GitHub</div>
-            <div class="fp-tool-item"><span class="fp-tool-dot"></span>Linux (Linux Mint)</div>
+            <div class="fp-tool-item"><span class="fp-tool-dot"></span>SQL</div>
+            <div class="fp-tool-item"><span class="fp-tool-dot"></span>Linux</div>
             <div class="fp-tool-item"><span class="fp-tool-dot"></span>LaTeX</div>
           </div>
         </div>
@@ -67,16 +64,11 @@ format:
         <div>
           <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:var(--space-4);">Areas of expertise</p>
           <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);">
-            <span class="fp-skill-chip">Time Series Analysis</span>
             <span class="fp-skill-chip">Statistical Modelling</span>
             <span class="fp-skill-chip">Data Visualisation</span>
-            <span class="fp-skill-chip">Electoral Data</span>
             <span class="fp-skill-chip">Forecasting</span>
-            <span class="fp-skill-chip">Monte Carlo Methods</span>
-            <span class="fp-skill-chip">Regression Analysis</span>
             <span class="fp-skill-chip">Data Cleaning & Pipelines</span>
-            <span class="fp-skill-chip">Factor Analysis</span>
-            <span class="fp-skill-chip">Structural Equation Modelling</span>
+            <span class="fp-skill-chip">Time Series Analysis</span>
           </div>
         </div>
       </div>
@@ -92,7 +84,7 @@ format:
 
       <div style="display:grid; grid-template-columns: 1fr 3fr; gap:var(--space-8); align-items:start;">
         <div>
-          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-text-faint);">2022 — present</p>
+          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-text-faint);">2023 — present</p>
         </div>
         <div>
           <h3 style="font-size:var(--text-base); font-weight:600; margin-bottom:var(--space-1);">BSc Statistics & Data Science</h3>
@@ -103,7 +95,7 @@ format:
 
       <div style="border-top: 1px solid var(--color-divider); padding-top: var(--space-8); display:grid; grid-template-columns: 1fr 3fr; gap:var(--space-8); align-items:start;">
         <div>
-          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-text-faint);">2019 — 2022</p>
+          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-text-faint);">2013 — 2019</p>
         </div>
         <div>
           <h3 style="font-size:var(--text-base); font-weight:600; margin-bottom:var(--space-1);">Matura (Secondary Education)</h3>
