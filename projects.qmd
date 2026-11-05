@@ -26,7 +26,7 @@ format:
     <div class="fp-section-header">
       <p class="fp-eyebrow">Portfolio</p>
       <h2>All projects</h2>
-      <p>Each project is a complete analysis — from raw data to written report, with reproducible R code.</p>
+      <p>Each project is a complete analysis, from raw data to written report, with reproducible R code.</p>
     </div>
   </div>
 </section>
@@ -35,10 +35,44 @@ format:
   <div class="fp-container">
     <div class="fp-projects-grid">
 
+      <div class="fp-project-card" id="thesis">
+        <span class="fp-project-tag">Bachelor's Thesis · Sports Analytics</span>
+        <h3>Estimating Expected Goals</h3>
+        <p>Compared a logistic regression and a random forest for expected goals (xG) on 3,067 shots from the FIFA World Cups 2018 and 2022 (StatsBomb Open Data). Models were trained on 2018 and validated on 2022. The interpretable logistic regression reached an out-of-sample AUC of 0.80 and a Brier score of 0.081, close to StatsBomb's proprietary model (AUC 0.81), while the random forest fell behind (AUC 0.73).</p>
+        <div class="fp-project-methods">
+          <span class="fp-method-tag">Logistic Regression</span>
+          <span class="fp-method-tag">Random Forest</span>
+          <span class="fp-method-tag">Temporal Validation</span>
+          <span class="fp-method-tag">AUC · Brier · Log Loss</span>
+          <span class="fp-method-tag">R</span>
+        </div>
+        <a href="mailto:fpopovic01@gmail.com?subject=Bachelor%27s%20thesis%20(xG)" class="fp-project-link">
+          Full thesis on request
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="fp-project-card">
+        <span class="fp-project-tag">Data Pipeline · Political Science</span>
+        <h3>Austrian Elections Analysis</h3>
+        <p>Designed and implemented a full data pipeline for Austrian federal election results (2019–2024). Includes automated data validation, error detection, D'Hondt seat allocation, coalition feasibility modelling and Monte Carlo simulations of electoral uncertainty, all documented in a reproducible R workflow.</p>
+        <div class="fp-project-methods">
+          <span class="fp-method-tag">D'Hondt Algorithm</span>
+          <span class="fp-method-tag">Monte Carlo Simulation</span>
+          <span class="fp-method-tag">Data Validation</span>
+          <span class="fp-method-tag">Pipeline Design</span>
+          <span class="fp-method-tag">R</span>
+        </div>
+        <a href="pdfs/elections-report.pdf" class="fp-project-link" target="_blank">
+          Read full report (PDF)
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
       <div class="fp-project-card">
         <span class="fp-project-tag">Time Series · Economics</span>
         <h3>Croatian GDP Analysis</h3>
-        <p>Modelled long-run economic trends in Croatian GDP using polynomial regression and ARFIMA processes. The analysis identifies structural breaks, decomposes seasonal components, and generates multi-step forecasts with confidence intervals — providing insight into Croatia's post-EU-accession growth trajectory.</p>
+        <p>Modelled long-run economic trends in Croatian GDP using polynomial regression and ARFIMA processes. The analysis identifies structural breaks, decomposes seasonal components and generates multi-step forecasts with confidence intervals, giving insight into Croatia's growth after EU accession.</p>
         <div class="fp-project-methods">
           <span class="fp-method-tag">ARFIMA</span>
           <span class="fp-method-tag">Polynomial Regression</span>
@@ -54,8 +88,8 @@ format:
 
       <div class="fp-project-card">
         <span class="fp-project-tag">Time Series · Finance</span>
-        <h3>Gold Return Forecasting</h3>
-        <p>Examined gold price return dynamics using spectral analysis and ARFIMA modelling. Tests for long memory and white noise properties reveal whether past returns contain statistically exploitable patterns — with implications for portfolio risk management and commodity pricing models.</p>
+        <h3>Gold Return Analysis</h3>
+        <p>Examined gold price return dynamics using spectral analysis and ARFIMA modelling. Tests for long memory and white noise show whether past returns contain statistically exploitable patterns, with implications for portfolio risk management.</p>
         <div class="fp-project-methods">
           <span class="fp-method-tag">Spectral Analysis</span>
           <span class="fp-method-tag">White Noise Tests</span>
@@ -69,23 +103,6 @@ format:
         </a>
       </div>
 
-      <div class="fp-project-card">
-        <span class="fp-project-tag">Data Pipeline · Political Science</span>
-        <h3>Austrian Elections Analysis</h3>
-        <p>Designed and implemented a full data pipeline for Austrian federal election results (2019–2024). Includes automated data validation, error detection, D'Hondt seat allocation, coalition feasibility modelling, and Monte Carlo simulations of electoral uncertainty — all documented in a reproducible R workflow.</p>
-        <div class="fp-project-methods">
-          <span class="fp-method-tag">D'Hondt Algorithm</span>
-          <span class="fp-method-tag">Monte Carlo Simulation</span>
-          <span class="fp-method-tag">Data Validation</span>
-          <span class="fp-method-tag">Pipeline Design</span>
-          <span class="fp-method-tag">R</span>
-        </div>
-        <a href="pdfs/elections-report.pdf" class="fp-project-link" target="_blank">
-          Read full report (PDF)
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
     </div>
   </div>
 </section>
@@ -93,10 +110,11 @@ format:
 <section class="fp-section fp-section-alt">
   <div class="fp-container">
     <div class="fp-contact-box">
-      <h2>Need a custom analysis?</h2>
-      <p>I take on freelance projects in statistical analysis, data cleaning, reporting and visualisation.</p>
+      <h2>Interested in my work?</h2>
+      <p>I'm currently looking for an entry-level role in data analysis, data science or risk analytics.</p>
       <div class="fp-contact-links">
         <a href="contact.html" class="btn btn-primary">Get in touch</a>
+        <a href="pdfs/Popovic_CV_2026.pdf" target="_blank" class="btn btn-outline">Download CV</a>
       </div>
     </div>
   </div>

@@ -1,2 +1,4 @@
 /.quarto/
 *.deb
+
+**/*.quarto_ipynb

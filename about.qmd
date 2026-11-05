@@ -25,9 +25,9 @@ format:
 <section class="fp-section" style="padding-top: var(--space-20); padding-bottom: var(--space-12);">
   <div class="fp-container">
     <p class="fp-eyebrow">About me</p>
-    <h1 style="font-size:var(--text-2xl); margin-bottom: var(--space-6);">Statistics student.<br><em style="color:var(--color-primary);">Data analyst.</em></h1>
+    <h1 style="font-size:var(--text-2xl); margin-bottom: var(--space-6);">Statistics graduate.<br><em style="color:var(--color-primary);">Analyst at heart.</em></h1>
     <p style="max-width:60ch; font-size:var(--text-lg); color:var(--color-text-muted); line-height:1.7;">
-      I'm Filip Popovic -  a Statistics & Data Science student at the University of Vienna. I help people and businesses make better decisions by turning messy data into clear, actionable answers.
+      I'm Filip Popovic, a statistics graduate from the University of Vienna. I enjoy turning messy data into clear, well-founded answers, and I'm now looking for my first full-time role in data analysis or data science.
     </p>
   </div>
 </section>
@@ -38,11 +38,11 @@ format:
     <div class="fp-about-grid">
       <div class="fp-about-text">
         <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-6);">Background</h2>
-        <p>I've always been curious about what numbers are really hiding and what you can do with them once you unpack them. Especially when the answer makes someone´s life even a little bit easier.</p>
-        <p>For me the best analysis is one that looks so simple and clean, you would think anyone could have done it. Some only see the results. Others will see the work.<p>
-        <p>Outside of work, you will find me on a football pitch, at the gym or socialising. Staying curious, whether it is about data or anything else, is what life is about.<p>
+        <p>I've always been curious about what numbers are really hiding and what you can do with them once you unpack them. Especially when the answer makes someone's life even a little bit easier.</p>
+        <p>For me the best analysis is one that looks so simple and clean, you would think anyone could have done it. Some only see the results. Others will see the work.</p>
+        <p>Outside of work, you will find me on a football pitch, at the gym or socialising. That love for football also led to my bachelor's thesis on expected goals models. Staying curious, whether it is about data or anything else, is what life is about.</p>
         <div style="margin-top:var(--space-8); display:flex; gap:var(--space-3); flex-wrap:wrap;">
-          <a href="contact.html" class="btn btn-primary">Work with me</a>
+          <a href="pdfs/Popovic_CV_2026.pdf" target="_blank" class="btn btn-primary">Download CV</a>
           <a href="projects.html" class="btn btn-outline">See my projects</a>
         </div>
       </div>
@@ -50,13 +50,13 @@ format:
       <div>
         <!-- TOOLS -->
         <div style="margin-bottom:var(--space-8);">
-          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:var(--space-4);">Tools & Technologies</p>
+          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:var(--space-4);">Tools &amp; Technologies</p>
           <div class="fp-tools-list">
-            <div class="fp-tool-item"><span class="fp-tool-dot"></span>R & RStudio</div>
+            <div class="fp-tool-item"><span class="fp-tool-dot"></span>R &amp; RStudio</div>
             <div class="fp-tool-item"><span class="fp-tool-dot"></span>Python</div>
-            <div class="fp-tool-item"><span class="fp-tool-dot"></span>SQL</div>
-            <div class="fp-tool-item"><span class="fp-tool-dot"></span>Linux</div>
-            <div class="fp-tool-item"><span class="fp-tool-dot"></span>LaTeX</div>
+            <div class="fp-tool-item"><span class="fp-tool-dot"></span>SQL (basic)</div>
+            <div class="fp-tool-item"><span class="fp-tool-dot"></span>RMarkdown &amp; LaTeX</div>
+            <div class="fp-tool-item"><span class="fp-tool-dot"></span>Excel, PowerPoint &amp; think-cell</div>
           </div>
         </div>
 
@@ -65,10 +65,10 @@ format:
           <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--color-text-faint);margin-bottom:var(--space-4);">Areas of expertise</p>
           <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);">
             <span class="fp-skill-chip">Statistical Modelling</span>
-            <span class="fp-skill-chip">Data Visualisation</span>
-            <span class="fp-skill-chip">Forecasting</span>
-            <span class="fp-skill-chip">Data Cleaning & Pipelines</span>
             <span class="fp-skill-chip">Time Series Analysis</span>
+            <span class="fp-skill-chip">Classification &amp; Model Evaluation</span>
+            <span class="fp-skill-chip">Monte Carlo Simulation</span>
+            <span class="fp-skill-chip">Data Visualisation</span>
           </div>
         </div>
       </div>
@@ -76,31 +76,63 @@ format:
   </div>
 </section>
 
-<!-- EDUCATION -->
+<!-- EXPERIENCE -->
 <section class="fp-section fp-section-alt">
+  <div class="fp-container">
+    <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-10);">Experience</h2>
+    <div style="display:flex; flex-direction:column; gap:var(--space-8); max-width:720px;">
+
+      <div style="display:grid; grid-template-columns: 1fr 3fr; gap:var(--space-8); align-items:start;">
+        <div>
+          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-text-faint);">07/2024 · 1 month</p>
+        </div>
+        <div>
+          <h3 style="font-size:var(--text-base); font-weight:600; margin-bottom:var(--space-1);">Risk Management Intern</h3>
+          <p style="color:var(--color-primary); font-size:var(--text-sm); margin-bottom:var(--space-3);">Generali Versicherung AG, Vienna</p>
+          <p style="color:var(--color-text-muted); font-size:var(--text-sm);">Cross-checked the credit ratings of all financial instruments and issuers across the portfolios of Generali, BAWAG and Europäische Versicherung. Automated the Risk Control Committee presentations for Strategic Asset Allocation with think-cell and reworked the Asset Risk Reports. Offered a follow-up internship by the department.</p>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid var(--color-divider); padding-top: var(--space-8); display:grid; grid-template-columns: 1fr 3fr; gap:var(--space-8); align-items:start;">
+        <div>
+          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-text-faint);">2020 — 2022</p>
+        </div>
+        <div>
+          <h3 style="font-size:var(--text-base); font-weight:600; margin-bottom:var(--space-1);">Waiter &amp; Bartender</h3>
+          <p style="color:var(--color-primary); font-size:var(--text-sm); margin-bottom:var(--space-3);">Treevent GmbH, Event catering</p>
+          <p style="color:var(--color-text-muted); font-size:var(--text-sm);">Service and customer care at large events, regularly lead bartender at the main bar. Trained new staff and supported event logistics.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="fp-section">
   <div class="fp-container">
     <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-10);">Education</h2>
     <div style="display:flex; flex-direction:column; gap:var(--space-8); max-width:720px;">
 
       <div style="display:grid; grid-template-columns: 1fr 3fr; gap:var(--space-8); align-items:start;">
         <div>
-          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-text-faint);">2023 — present</p>
+          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-text-faint);">2023 — 2026</p>
         </div>
         <div>
-          <h3 style="font-size:var(--text-base); font-weight:600; margin-bottom:var(--space-1);">BSc Statistics & Data Science</h3>
+          <h3 style="font-size:var(--text-base); font-weight:600; margin-bottom:var(--space-1);">BSc Statistics and Data Analytics</h3>
           <p style="color:var(--color-primary); font-size:var(--text-sm); margin-bottom:var(--space-3);">University of Vienna</p>
-          <p style="color:var(--color-text-muted); font-size:var(--text-sm);">6th semester. Coursework in time series analysis, regression modelling, multivariate statistics, probability theory, Bayesian inference, and data management. Projects in R, Python, and SQL.</p>
+          <p style="color:var(--color-text-muted); font-size:var(--text-sm);">All exams completed in 2026. Bachelor's thesis on expected goals models (logistic regression vs. random forest). Coursework in linear models, multivariate statistics, computational statistics, time series analysis, mathematical statistics, applied econometrics and actuarial mathematics.</p>
         </div>
       </div>
 
       <div style="border-top: 1px solid var(--color-divider); padding-top: var(--space-8); display:grid; grid-template-columns: 1fr 3fr; gap:var(--space-8); align-items:start;">
         <div>
-          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-text-faint);">2013 — 2019</p>
+          <p style="font-size:var(--text-xs);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--color-text-faint);">2019</p>
         </div>
         <div>
           <h3 style="font-size:var(--text-base); font-weight:600; margin-bottom:var(--space-1);">Matura (Secondary Education)</h3>
-          <p style="color:var(--color-primary); font-size:var(--text-sm); margin-bottom:var(--space-3);">Austria</p>
-          <p style="color:var(--color-text-muted); font-size:var(--text-sm);">Focus on mathematics and sciences.</p>
+          <p style="color:var(--color-primary); font-size:var(--text-sm); margin-bottom:var(--space-3);">AHS Heustadelgasse, Vienna</p>
+          <p style="color:var(--color-text-muted); font-size:var(--text-sm);">Realgymnasium with Descriptive Geometry.</p>
         </div>
       </div>
 
@@ -109,7 +141,7 @@ format:
 </section>
 
 <!-- LANGUAGES -->
-<section class="fp-section">
+<section class="fp-section fp-section-alt">
   <div class="fp-container">
     <h2 style="font-size:var(--text-xl); margin-bottom:var(--space-8);">Languages</h2>
     <div style="display:flex; gap:var(--space-6); flex-wrap:wrap;">
@@ -119,27 +151,27 @@ format:
       </div>
       <div style="width:1px; background:var(--color-divider);"></div>
       <div style="display:flex; flex-direction:column; gap:var(--space-1);">
-        <span style="font-weight:600;">English</span>
-        <span style="font-size:var(--text-sm); color:var(--color-text-muted);">Fluent (professional)</span>
+        <span style="font-weight:600;">Croatian</span>
+        <span style="font-size:var(--text-sm); color:var(--color-text-muted);">Native</span>
       </div>
       <div style="width:1px; background:var(--color-divider);"></div>
       <div style="display:flex; flex-direction:column; gap:var(--space-1);">
-        <span style="font-weight:600;">Croatian/Serbian</span>
-        <span style="font-size:var(--text-sm); color:var(--color-text-muted);">Native</span>
+        <span style="font-weight:600;">English</span>
+        <span style="font-size:var(--text-sm); color:var(--color-text-muted);">Fluent (C1)</span>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="fp-section fp-section-alt">
+<section class="fp-section">
   <div class="fp-container">
     <div class="fp-contact-box">
-      <h2>Let's work together</h2>
-      <p>Available for freelance data analysis projects — from one-off reports to ongoing analysis work.</p>
+      <h2>Open to new opportunities</h2>
+      <p>I'm looking for an entry-level position in data analysis, data science or risk analytics.</p>
       <div class="fp-contact-links">
         <a href="contact.html" class="btn btn-primary">Get in touch</a>
-        <a href="projects.html" class="btn btn-outline">View my work</a>
+        <a href="pdfs/Popovic_CV_2026.pdf" target="_blank" class="btn btn-outline">Download CV</a>
       </div>
     </div>
   </div>
