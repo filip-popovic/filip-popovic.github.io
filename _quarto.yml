@@ -1,9 +1,11 @@
 project:
   type: website
   output-dir: docs
+  post-render: python3 fix_titles.py
   resources:
     - pdfs/
     - assets/filip.jpg
+    - assets/projects/
 
 website:
   title: "Filip Popovic"

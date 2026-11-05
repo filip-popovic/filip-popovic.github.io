@@ -476,3 +476,88 @@ main.content { padding: 0 !important; max-width: 100% !important; }
   object-fit: cover;
   display: block;
 }
+
+/* =============================================
+   PROJECT DETAIL PAGES
+   ============================================= */
+/* Whole project card is clickable via its main link */
+.fp-project-card { position: relative; }
+.fp-card-link::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.fp-project-card:has(.fp-card-link) { cursor: pointer; }
+
+.fp-back-link {
+  display: flex; width: fit-content; align-items: center; gap: var(--space-2);
+  font-size: var(--text-sm); color: var(--color-text-muted);
+  text-decoration: none; margin-bottom: var(--space-8);
+}
+.fp-back-link:hover { color: var(--color-primary); }
+
+.fp-detail-hero { padding-top: var(--space-16); padding-bottom: var(--space-10); }
+.fp-detail-hero h1 {
+  font-family: var(--font-display); font-weight: 400;
+  font-size: var(--text-2xl); line-height: 1.1; margin: var(--space-3) 0 var(--space-6);
+}
+.fp-detail-lead { max-width: 64ch; font-size: var(--text-lg); line-height: 1.6; color: var(--color-text-muted); }
+
+.fp-kpis {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4);
+  margin-top: var(--space-10);
+}
+.fp-kpi {
+  background: var(--color-surface); border: 1px solid var(--color-divider);
+  border-radius: var(--radius-lg); padding: var(--space-6);
+}
+.fp-kpi-number {
+  font-family: var(--font-display); font-size: var(--text-xl);
+  color: var(--color-primary); line-height: 1; margin-bottom: var(--space-2);
+}
+.fp-kpi-label {
+  font-size: var(--text-xs); color: var(--color-text-muted);
+  text-transform: uppercase; letter-spacing: 0.06em; font-weight: 500;
+}
+
+.fp-detail-body { max-width: 760px; margin-inline: auto; padding-inline: var(--space-6); }
+.fp-detail-body h2 {
+  font-family: var(--font-display); font-weight: 400; font-size: var(--text-xl);
+  margin: var(--space-12) 0 var(--space-4);
+}
+.fp-detail-body p, .fp-detail-body li {
+  font-size: var(--text-base); line-height: 1.75; color: var(--color-text);
+}
+.fp-detail-body p { margin-bottom: var(--space-4); }
+.fp-detail-body ul { padding-left: 1.2em; margin-bottom: var(--space-4); }
+.fp-detail-body li { margin-bottom: var(--space-2); }
+
+.fp-figure { margin: var(--space-8) 0; }
+.fp-figure img {
+  width: 100%; height: auto; display: block; background: #fff;
+  border: 1px solid var(--color-divider); border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  max-height: 560px; object-fit: contain;
+}
+.fp-figure figcaption {
+  font-size: var(--text-sm); color: var(--color-text-muted);
+  margin-top: var(--space-3); line-height: 1.6;
+}
+
+.fp-table { width: 100%; border-collapse: collapse; margin: var(--space-6) 0; font-size: var(--text-sm); }
+.fp-table th, .fp-table td { text-align: left; padding: var(--space-3) var(--space-4); border-bottom: 1px solid var(--color-divider); }
+.fp-table th { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-text-muted); font-weight: 600; }
+.fp-table tr.fp-highlight td { color: var(--color-primary); font-weight: 600; }
+
+.fp-pdf-section { padding-top: var(--space-16); }
+.fp-pdf-head {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: var(--space-4); margin-bottom: var(--space-6);
+}
+.fp-pdf-head h2 { font-family: var(--font-display); font-weight: 400; font-size: var(--text-xl); margin: 0; }
+.fp-pdf-frame {
+  width: 100%; height: 85vh; min-height: 560px; display: block;
+  border: 1px solid var(--color-divider); border-radius: var(--radius-lg);
+  background: var(--color-surface-offset);
+}
+
+@media (max-width: 768px) {
+  .fp-kpis { grid-template-columns: repeat(2, 1fr); }
+  .fp-pdf-frame { height: 70vh; min-height: 420px; }
+}
