@@ -72,7 +72,7 @@ format:
       <div class="fp-project-card">
         <span class="fp-project-tag">Time Series · Economics</span>
         <h3>Croatian GDP Analysis</h3>
-        <p>Analysed quarterly Croatian real GDP since 1995 with polynomial and broken trends, the HP filter, spectral analysis and an ARFIMA long-memory model. Shows how the 2008 crisis and COVID-19 reshaped growth and how persistent shocks are.</p>
+        <p>Analysed quarterly Croatian real GDP since 1995 with polynomial and broken trends, the HP filter, spectral analysis and an ARFIMA long-memory model. Shows how the 2008 crisis cost a decade of growth and why shocks to GDP are permanent.</p>
         <div class="fp-project-methods">
           <span class="fp-method-tag">ARFIMA</span>
           <span class="fp-method-tag">Polynomial Regression</span>

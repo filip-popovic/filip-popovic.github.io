@@ -73,12 +73,12 @@ ul.task-list li input[type="checkbox"] {
     <a href="projects.html" class="fp-back-link"><svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg> All projects</a>
     <span class="fp-project-tag">Time Series · Economics</span>
     <h1>Croatian Real GDP: Trends, Cycles and Persistence</h1>
-    <p class="fp-detail-lead">How did the 2008 financial crisis and the COVID-19 shock shape Croatia's growth path? Is GDP growth random noise, or does it have structure? Trend models, the HP filter, spectral analysis and ARFIMA models on quarterly data since 1995.</p>
+    <p class="fp-detail-lead">How did the 2008 financial crisis and the COVID-19 shock shape Croatia's growth path, and is quarterly GDP growth predictable? Trend models, the HP filter, spectral tests and ARFIMA models on 126 quarters of data since 1995.</p>
     <div class="fp-kpis">
-      <div class="fp-kpi"><div class="fp-kpi-number">1995+</div><div class="fp-kpi-label">Quarterly data (FRED)</div></div>
-      <div class="fp-kpi"><div class="fp-kpi-number">4</div><div class="fp-kpi-label">Methods combined</div></div>
-      <div class="fp-kpi"><div class="fp-kpi-number">+0.62%</div><div class="fp-kpi-label">Mean growth per quarter</div></div>
-      <div class="fp-kpi"><div class="fp-kpi-number">126</div><div class="fp-kpi-label">Quarters of data</div></div>
+      <div class="fp-kpi"><div class="fp-kpi-number">10.5 yrs</div><div class="fp-kpi-label">To regain the 2008 peak</div></div>
+      <div class="fp-kpi"><div class="fp-kpi-number">-14.1%</div><div class="fp-kpi-label">GDP in 2020 Q2</div></div>
+      <div class="fp-kpi"><div class="fp-kpi-number">p ≥ 0.17</div><div class="fp-kpi-label">White noise test on growth</div></div>
+      <div class="fp-kpi"><div class="fp-kpi-number">d ≈ 1</div><div class="fp-kpi-label">Random walk with drift</div></div>
     </div>
   </div>
 </section>
@@ -86,32 +86,46 @@ ul.task-list li input[type="checkbox"] {
 <section class="fp-section" style="padding-top:0;">
   <div class="fp-detail-body">
     <h2 class="anchored">The question</h2>
-    <p>Croatia's economy has grown steadily since the mid-1990s, but not smoothly. The analysis looks at three
-    practical questions: what the long-run growth path looks like and how crises changed it, whether there is
-    predictable structure in GDP growth, and how persistent economic shocks are.</p>
+    <p>Croatia's economy has grown considerably since the mid-1990s, but not smoothly. The analysis looks at three
+    questions: what the long-run growth path looks like and how the two big crises changed it, whether quarterly
+    growth has predictable structure, and whether shocks fade out or leave a permanent mark.</p>
     <figure class="fp-figure">
-      <img src="assets/projects/gdp_raw_series.png" alt="Croatian real GDP since 1995" loading="lazy">
+      <img class="fp-img-light" src="assets/projects/gdp_raw_series.png" alt="Croatian real GDP since 1995" loading="lazy">
+      <img class="fp-img-dark" src="assets/projects/gdp_raw_series_dark.png" alt="Croatian real GDP since 1995" loading="lazy">
       <figcaption>Croatian real GDP (log, seasonally adjusted). The dashed lines mark the Global Financial Crisis (2008 Q4) and the COVID-19 shock (2020 Q2).</figcaption>
     </figure>
 
-    <h2 class="anchored">Trend analysis</h2>
-    <p>I compared polynomial trends of degree 1 to 4, broken linear trends with structural breaks and the
-    Hodrick-Prescott filter at several smoothing levels. The broken trend model with breaks in 2008 Q4 and 2020 Q2
-    separates three distinct phases: the pre-crisis boom, a decade of stagnation and the post-COVID acceleration.</p>
+    <h2 class="anchored">Trends and structural breaks</h2>
+    <p>I compared polynomial trends of degree 1 to 4, three broken linear trend models and the Hodrick-Prescott filter.
+    The best model combines breaks in slope after 2008 Q4 and 2020 Q2 with a break in level after 2020 Q2. It separates
+    three phases: trend growth of 0.80% per quarter before the crisis, almost no growth (0.01% per quarter) between 2009
+    and 2020, and a strong post-pandemic phase.</p>
     <figure class="fp-figure">
-      <img src="assets/projects/gdp_broken_trends.png" alt="Broken linear trend models" loading="lazy">
-      <figcaption>Broken linear trends with one and two structural breaks. The two-break model (right) fits the three growth phases best.</figcaption>
+      <img class="fp-img-light" src="assets/projects/gdp_broken_trends.png" alt="Broken linear trend models" loading="lazy">
+      <img class="fp-img-dark" src="assets/projects/gdp_broken_trends_dark.png" alt="Broken linear trend models" loading="lazy">
+      <figcaption>Broken linear trends. Model (c), with slope breaks and a level break after 2020 Q2, fits best of all trend models.</figcaption>
     </figure>
+    <p>The 2008 crisis was not a temporary dip: the pre-crisis peak of 2008 Q2 was only regained in 2018 Q4,
+    10.5 years later. COVID-19 caused a far deeper but short fall of 14.1% in 2020 Q2, and GDP was back at its
+    pre-pandemic level by 2021 Q1.</p>
     <figure class="fp-figure">
-      <img src="assets/projects/gdp_growth.png" alt="Quarter-on-quarter growth rates" loading="lazy">
-      <figcaption>Quarter-on-quarter growth rates. 2020 Q2 is the steepest fall in the sample, immediately followed by the strongest recovery.</figcaption>
+      <img class="fp-img-light" src="assets/projects/gdp_growth.png" alt="Quarter-on-quarter growth rates" loading="lazy">
+      <img class="fp-img-dark" src="assets/projects/gdp_growth_dark.png" alt="Quarter-on-quarter growth rates" loading="lazy">
+      <figcaption>Quarter-on-quarter growth rates. The largest fall is -14.1% in 2020 Q2, the strongest quarter +8.4% in 2020 Q4.</figcaption>
     </figure>
+
+    <h2 class="anchored">Is quarterly growth predictable?</h2>
+    <p>No. The spectral white noise test from the lecture does not reject for any threshold (p-values between 0.17
+    and 0.58). A Ljung-Box test (p = 0.60) and an AR(1) model (coefficient 0.06) agree, and leaving out the COVID-19
+    years does not change the result. ARFIMA models fitted to the growth rates find no long memory either
+    (semiparametric estimate d = 0.03, standard error 0.04).</p>
 
     <h2 class="anchored">Key takeaways</h2>
     <ul>
-      <li>The 2008 crisis did lasting damage. Growth stayed weak for almost a decade.</li>
-      <li>COVID-19 caused the sharpest drop, but the recovery was fast, driven by tourism and external demand.</li>
-          </ul>
+      <li>Croatian log GDP behaves like a random walk with drift: quarterly growth is essentially unpredictable. The drift itself was not constant, though: average growth fell from 0.88% per quarter before 2009 to 0.13% between 2009 and 2019 (Welch test, p = 0.02).</li>
+      <li>That also means shocks are permanent. They shift the level of output for good instead of fading away, which is why 2008 cost Croatia about a decade.</li>
+      <li>The interesting structure lies in the trend and its breaks, not in short-term growth dynamics.</li>
+    </ul>
 
     <h2 class="anchored">Tools</h2>
     <p>R (mFilter, fracdiff, kableExtra), RMarkdown.</p>

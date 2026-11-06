@@ -53,7 +53,8 @@ format:
       defenders in the shooting cone, body part, technique, shot type, pressure, first-time shots and one-on-ones</li>
     </ul>
     <figure class="fp-figure">
-      <img src="assets/projects/xg_distance.png" alt="Histogram of shot distance to goal" loading="lazy">
+      <img class="fp-img-light" src="assets/projects/xg_distance.png" alt="Histogram of shot distance to goal" loading="lazy">
+      <img class="fp-img-dark" src="assets/projects/xg_distance_dark.png" alt="Histogram of shot distance to goal" loading="lazy">
       <figcaption>Distribution of shot distance to goal. Most shots are taken from roughly 5 to 35 metres, with a long tail of speculative long-range efforts.</figcaption>
     </figure>
 
@@ -81,11 +82,13 @@ format:
     <p>The logistic regression comes within about <strong>0.02 AUC points</strong> of StatsBomb's proprietary
     model, despite being trained on a single tournament. The random forest falls clearly behind on every metric.</p>
     <figure class="fp-figure">
-      <img src="assets/projects/xg_roc.png" alt="ROC curves of the three xG models" loading="lazy">
+      <img class="fp-img-light" src="assets/projects/xg_roc.png" alt="ROC curves of the three xG models" loading="lazy">
+      <img class="fp-img-dark" src="assets/projects/xg_roc_dark.png" alt="ROC curves of the three xG models" loading="lazy">
       <figcaption>ROC curves on the World Cup 2022 test set. The logistic regression (red) tracks the StatsBomb benchmark (blue) closely, while the random forest (green) is consistently below both.</figcaption>
     </figure>
     <figure class="fp-figure">
-      <img src="assets/projects/xg_calibration.png" alt="Calibration plot of the logistic regression" loading="lazy">
+      <img class="fp-img-light" src="assets/projects/xg_calibration.png" alt="Calibration plot of the logistic regression" loading="lazy">
+      <img class="fp-img-dark" src="assets/projects/xg_calibration_dark.png" alt="Calibration plot of the logistic regression" loading="lazy">
       <figcaption>Calibration of the logistic regression. Predicted probabilities match observed goal frequencies well across most of the range, with some deviation in the highest-probability bin.</figcaption>
     </figure>
 

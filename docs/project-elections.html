@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="fp-kpis">
       <div class="fp-kpi"><div class="fp-kpi-number">183</div><div class="fp-kpi-label">Seats allocated (D'Hondt)</div></div>
       <div class="fp-kpi"><div class="fp-kpi-number">3</div><div class="fp-kpi-label">Elections processed</div></div>
-      <div class="fp-kpi"><div class="fp-kpi-number">5</div><div class="fp-kpi-label">Automated consistency checks</div></div>
+      <div class="fp-kpi"><div class="fp-kpi-number">6</div><div class="fp-kpi-label">Automated consistency checks</div></div>
       <div class="fp-kpi"><div class="fp-kpi-number">100,000</div><div class="fp-kpi-label">Simulated polls</div></div>
     </div>
   </div>
@@ -95,14 +95,15 @@ ul.task-list li input[type="checkbox"] {
       <li><strong>Source:</strong> official results of the Federal Ministry of the Interior at municipality, district, state and national level</li>
       <li><strong>Elections:</strong> Nationalratswahl 2019 and 2024, plus the presidential election 2022 as a test case for the validation</li>
       <li><strong>Automated ingestion:</strong> the pipeline detects all result files, harmonises column names and data types, and adapts automatically to new elections, so adding one only requires dropping in the file</li>
-      <li><strong>Validation:</strong> five consistency checks, for example that votes add up across geographic levels and that valid plus invalid votes match ballots cast</li>
+      <li><strong>Validation:</strong> six consistency checks, for example that votes add up across geographic levels and that valid plus invalid votes match ballots cast</li>
     </ul>
 
     <h2 class="anchored">Seat allocation</h2>
     <p>Seats were allocated with my own implementation of the <strong>D'Hondt method</strong>, written in
     vectorised R without electoral packages.</p>
     <figure class="fp-figure">
-      <img src="assets/projects/elections_seats_2024.png" alt="Seat distribution 2024" loading="lazy">
+      <img class="fp-img-light" src="assets/projects/elections_seats_2024.png" alt="Seat distribution 2024" loading="lazy">
+      <img class="fp-img-dark" src="assets/projects/elections_seats_2024_dark.png" alt="Seat distribution 2024" loading="lazy">
       <figcaption>Seat distribution after the 2024 election: FPÖ 57, ÖVP 51, SPÖ 41, NEOS 18, Greens 16.</figcaption>
     </figure>
 
@@ -111,8 +112,9 @@ ul.task-list li input[type="checkbox"] {
     coalitions are mathematically possible. In 2024, every two-party majority required the ÖVP or the SPÖ. In the
     end a three-party coalition of ÖVP, SPÖ and NEOS was formed without the FPÖ.</p>
     <figure class="fp-figure">
-      <img src="assets/projects/elections_coalitions_2024.png" alt="Two-party coalitions 2024" loading="lazy">
-      <figcaption>All two-party combinations with a majority in 2024. ÖVP-SPÖ only just reaches the 92-seat threshold.</figcaption>
+      <img class="fp-img-light" src="assets/projects/elections_coalitions_2024.png" alt="Coalitions with a majority 2024" loading="lazy">
+      <img class="fp-img-dark" src="assets/projects/elections_coalitions_2024_dark.png" alt="Coalitions with a majority 2024" loading="lazy">
+      <figcaption>All coalitions of two or three parties with a majority in 2024. ÖVP-SPÖ reaches exactly the 92-seat threshold.</figcaption>
     </figure>
 
     <h2 class="anchored">How reliable are polls?</h2>
@@ -120,7 +122,8 @@ ul.task-list li input[type="checkbox"] {
     when the true shares are known exactly, realistic sample sizes produce a wide spread of outcomes, especially for
     smaller parties near the 4% threshold for entering parliament.</p>
     <figure class="fp-figure">
-      <img src="assets/projects/elections_polls.png" alt="Simulated poll distribution" loading="lazy">
+      <img class="fp-img-light" src="assets/projects/elections_polls.png" alt="Simulated poll distribution" loading="lazy">
+      <img class="fp-img-dark" src="assets/projects/elections_polls_dark.png" alt="Simulated poll distribution" loading="lazy">
       <figcaption>Distribution of 100,000 simulated polls (n = 200). The dashed line marks the 4% threshold.</figcaption>
     </figure>
 
@@ -132,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
     </ul>
 
     <h2 class="anchored">Tools</h2>
-    <p>R (xlsx, ggplot2, kableExtra), RMarkdown.</p>
+    <p>R (openxlsx, ggplot2, kableExtra), RMarkdown.</p>
   </div>
 </section>
 
